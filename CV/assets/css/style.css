@@ -1,0 +1,75 @@
+@import "./utils/reboot.css";
+@import "./utils/responsive.css";
+@import "./utils/fonts.css";
+          
+
+body {
+    background-color: #070303;
+    color: #fff;
+    font-size: 16px;
+    font-family: "montserrat-medium", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #101010;
+    padding: 10px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+header img {
+    width: 200px;
+}
+
+header nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header nav ul li a {
+
+    /* Je debug l'affichage de l'élément avec un simple display: flex; */
+    display: flex;
+
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    transform-origin: 50% 50%;
+    transform: scale(1);
+    transition: all linear 0.2s;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    background-color: #101010;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
+    padding: 40px;
+}
+
+footer ul {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul:nth-child(2) {
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer ul li {
+    margin: 10px 0;
+}
